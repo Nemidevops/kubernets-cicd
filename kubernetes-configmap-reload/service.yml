@@ -1,11 +1,11 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: kubernetes
+  name: kubernetes-configmap-reload
 spec:
   type: LoadBalancer
   selector:
-    app: kubernetes
+    app: kubernetes-configmap-reload
   ports:
     - name: http
       protocol: TCP
